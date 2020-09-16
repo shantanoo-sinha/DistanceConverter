@@ -1,8 +1,5 @@
 package com.iit.cs442.fall20.shantanoo.converter;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -15,6 +12,9 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.text.DecimalFormat;
 
@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
         String fromText = conversionFromET.getText().toString().trim();
         Log.d(TAG, "convert: fromText=>" + fromText);
 
-        if(TextUtils.isEmpty(fromText))
+        if (TextUtils.isEmpty(fromText))
             return;
 
         // Conversion
@@ -124,15 +124,15 @@ public class MainActivity extends AppCompatActivity {
 
     private void setLayout(View view) {
         Log.d(TAG, "setLayout: Updating layout values");
-        boolean isChecked = ((RadioButton)view).isChecked();
+        boolean isChecked = ((RadioButton) view).isChecked();
 
         switch (view.getId()) {
             case R.id.milesToKM:
-                if(isChecked)
+                if (isChecked)
                     updateSelection(Unit.MILE, Unit.KILOMETER);
                 break;
             case R.id.kmToMiles:
-                if(isChecked)
+                if (isChecked)
                     updateSelection(Unit.KILOMETER, Unit.MILE);
                 break;
             default:
@@ -189,6 +189,6 @@ public class MainActivity extends AppCompatActivity {
         conversionToET.setText(savedInstanceState.getString("TO_VALUE"));
         conversionFromTV.setText(savedInstanceState.getString("FROM_TEXT"));
         conversionToTV.setText(savedInstanceState.getString("TO_TEXT"));
-        conversionHistory.setText( savedInstanceState.getString("CONVERSION_HISTORY"));
+        conversionHistory.setText(savedInstanceState.getString("CONVERSION_HISTORY"));
     }
 }

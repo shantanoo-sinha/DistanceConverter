@@ -2,7 +2,7 @@ package com.iit.cs442.fall20.shantanoo.converter;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Example local unit test, which will execute on the development machine (host).
