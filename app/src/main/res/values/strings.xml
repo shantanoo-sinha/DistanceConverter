@@ -13,4 +13,6 @@
     <string name="clear_conversion_history_message">Conversion History cleared</string>
     <string name="conversion_preference">ConversionPreference</string>
     <string name="distance_converter_preferences">DistanceConverterPreferences</string>
+    <string name="conversion_from_default">0.0</string>
+    <string name="conversion_to_default">0.0</string>
 </resources>
