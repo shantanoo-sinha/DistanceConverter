@@ -18,6 +18,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.text.DecimalFormat;
 
+/**
+ * Created by Shantanoo on 9/7/2020.
+ */
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivityTag";
